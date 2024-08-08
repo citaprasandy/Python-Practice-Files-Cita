@@ -31,13 +31,10 @@ def choice2():
     try:
         with open("file.txt", "r") as f:
             data = f.read()  # 'data' now contains the contents of the file as a string
-            
-            # Display the raw content of the file
-            print("\nStored credentials:\n")
+      
             
             # Check if there's any data and display a corresponding message
             if data.strip():  # Use strip() to remove any extra whitespace
-                print("Below is your credentials:\n")
                 
                 # Display formatted table if there's data
                 dataList = data.strip().split('\n')
